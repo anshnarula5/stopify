@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background-primary: #101011;
+  --text-secondary: #9b9da4;
+}
+
+.navbar{
+  background-color: var(--background-primary);
+  color: var(--text-secondary);
+}
