@@ -3,7 +3,7 @@ import React from 'react';
 
 const Card = ({ trackName, subtitle, coverImg }: any) => {
   return (
-    <div className="w-48 mx-2">
+    <div className="w-48 ">
       <div className="relative h-48 overflow-hidden rounded-md">
         <Image
           src={coverImg}
@@ -14,7 +14,7 @@ const Card = ({ trackName, subtitle, coverImg }: any) => {
       </div>
       <div className="py-4 rounded-b-lg">
         <h2 className="text-lg font-semibold">{trackName}</h2>
-        <p className="text-gray-600 ">{subtitle}</p>
+        <p className="secondaryText">{subtitle}</p>
       </div>
     </div>
   );

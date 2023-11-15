@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <aside className="h-screen navbar">
-      <nav className="h-full flex flex-col shadow-sm ">
+      <nav className=" flex flex-col shadow-sm ">
         <div className="px-4 py-6 flex justify-between items-center">
           <img
             src="https://img.logoipsum.com/245.svg"

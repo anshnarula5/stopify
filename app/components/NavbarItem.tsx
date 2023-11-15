@@ -24,9 +24,9 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ icon, text, expanded }) => {
         <div
           className={`
             absolute left-full rounded-md px-2 py-1 ml-6
-             text-slate-200 text-sm
+           text-slate-200 text-sm bg-black
             invisible opacity-20 -translate-x-3 transition-all
-            group-hover:visible group-hover:opacity-100 group-hover:translate-x-0
+            group-hover:visible group-hover:opacity-100 group-hover:translate-x-0 z-10
           `}
         >
           {text}

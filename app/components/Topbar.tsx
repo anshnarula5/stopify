@@ -5,7 +5,7 @@ import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 import SearchBar from './Searchbar';
 const Topbar = () => {
   return (
-    <div className='flex h-fit w-full items-center justify-between gap-8 px-8 py-4'>
+    <div className='flex h-fit w-full items-center justify-between gap-8  py-4'>
       <div className=''>
         <ArrowBackIosOutlinedIcon className='mx-2 hover:cursor-pointer' />
         <ArrowForwardIosOutlinedIcon className='mx-2 hover:cursor-pointer' />
