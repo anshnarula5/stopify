@@ -4,10 +4,16 @@
 
 :root {
   --background-primary: #101011;
+  --background-secondary: #18191b;
   --text-secondary: #9b9da4;
 }
 
 .navbar{
   background-color: var(--background-primary);
   color: var(--text-secondary);
+}
+
+.main{
+  color: white;
+  background-color: var(--background-secondary);
 }
