@@ -4,6 +4,8 @@ import Card from "./components/CoverCard"
 import Topbar from "./components/Topbar"
 import SongPlayer from "./components/SongPlayer";
 import TrackCard from "./components/TrackCard";
+import Image from "next/image";
+import Profile from "./components/Profile";
 
 const Home = () => {
   const [selectedSong, setSelectedSong] = useState(null);
@@ -23,7 +25,7 @@ const Home = () => {
                 </h2>
                 <span className="secondaryText">See all</span>
               </div>
-              <div className="flex gap-8">
+              <div className="flex gap-8 flex-wrap">
                 <Card onClick={handleCardClick} trackName="Today's Hot Hits" coverImg="https://i.scdn.co/image/ab67706c0000da84a78f555e92c7b9e75bfa1ed8" subtitle="The most played tracks right now" />
                 <Card onClick={handleCardClick} trackName="Yellow" coverImg="https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Yellow_cover_art.JPG/220px-Yellow_cover_art.JPG" subtitle="Coldplay" />
                 <Card onClick={handleCardClick} trackName="Come As You Are" coverImg="https://static.wikia.nocookie.net/nirvana/images/3/3f/Nevermind.jpg/revision/latest?cb=20101224055911" subtitle="Nirvana" />
@@ -48,8 +50,7 @@ const Home = () => {
         </div>
         {selectedSong && <SongPlayer song={selectedSong} />}
       </div>
-      <div className="w-full p-6">
-      </div>
+      <Profile handleCardClick = {handleCardClick} />
     </div>
   )
 }

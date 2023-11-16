@@ -33,3 +33,7 @@
     cursor: pointer;
   }
 }
+
+.profile{
+  background-color: var(--background-primary);
+}

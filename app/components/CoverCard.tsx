@@ -8,7 +8,7 @@ const CoverCard = ({ trackName, subtitle, coverImg, onClick }: any) => {
     }
   };
   return (
-    <div className="w-48" onClick={handleClick}>
+    <div className="w-52" onClick={handleClick}>
       <div className="relative h-48 overflow-hidden rounded-md cursor-pointer">
         <Image
           src={coverImg}
