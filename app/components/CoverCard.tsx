@@ -12,7 +12,9 @@ const CoverCard = ({ trackName, subtitle, coverImg, onClick, selectedSong }: any
   return (
     <div className={`w-52 backdrop-blur-lg  rounded-lg `}
       onClick={handleClick}>
-      <div className="relative h-48 overflow-hidden rounded-md cursor-pointer">
+      <div className="relative shadow-md hover:shadow-lg hover:shadow-black shadow-black
+       h-48 overflow-hidden rounded-md cursor-pointer hover:scale-105 transition
+      duration-300 ease-in-out">
         <Image
           src={coverImg}
           alt="Album Cover"

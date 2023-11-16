@@ -10,9 +10,10 @@ const TrackCard = ({ trackName, subtitle, coverImg, onClick, artist, selectedSon
   const isSelected = selectedSong?.trackName === trackName;
 
   return (
-    <div className="w-full flex justify-between cursor-pointer items-center" onClick={handleClick}>
+    <div className="w-full flex justify-between cursor-pointer items-center hover:shadow-lg
+     hover:shadow-black shadow-black hover:scale-105  transition duration-200 ease-in-out py-1" onClick={handleClick}>
       <div className="flex gap-3 items-center">
-        <div className="relative w-16 h-16">
+        <div className="relative w-12 h-12 ">
           <Image src={coverImg} alt="Album Cover" objectFit="cover" layout="fill" />
           {isSelected && (
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 ">
