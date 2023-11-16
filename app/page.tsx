@@ -14,8 +14,8 @@ const Home = () => {
   };
   return (
     <div className="main flex w-full lg:flex-row flex-col">
-      <div className=" flex px-5 pt-3 pb-24 flex-col">
-        <div className="px-6 " >
+      <div className=" flex p-1 lg:px-6 lg:pt-3 pb-24 flex-col">
+        <div className="" >
           <Topbar />
           <div>
             <div className="py-3">
@@ -23,7 +23,7 @@ const Home = () => {
                 <h2 className="text-3xl font-bold">
                   Hello, Ansh
                 </h2>
-                <span className="secondaryText">See all</span>
+                <span className=" icon">See all</span>
               </div>
               <div className="flex gap-8 flex-wrap">
                 <Card selectedSong = {selectedSong} onClick={handleCardClick} trackName="Today's Hot Hits" coverImg="https://i.scdn.co/image/ab67706c0000da84a78f555e92c7b9e75bfa1ed8" subtitle="The most played tracks right now" />
@@ -37,7 +37,7 @@ const Home = () => {
                 <h2 className="text-3xl font-bold">
                   New releases for you
                 </h2>
-                <span className="secondaryText">See all</span>
+                <span className=" icon">See all</span>
               </div>
               <div className="flex gap-8">
                 <Card selectedSong = {selectedSong} onClick={handleCardClick} trackName="Starboy" coverImg="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png" subtitle="The Weekend, Daft Punk" />

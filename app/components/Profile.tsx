@@ -31,7 +31,7 @@ const Profile = ({handleCardClick, selectedSong} : any) => {
           <h2 className="text-xl font-bold">
             Recently Played
           </h2>
-          <span className="secondaryText">See all</span>
+          <span className="icon">See all</span>
         </div>
       </div>
       <div className='flex flex-col gap-4'>
@@ -45,7 +45,7 @@ const Profile = ({handleCardClick, selectedSong} : any) => {
           <h2 className="text-xl font-bold">
            My Playlist
           </h2>
-          <span className="secondaryText">See all</span>
+          <span className="icon">See all</span>
         </div>
       </div>
       <div className='flex flex-col gap-4'>
