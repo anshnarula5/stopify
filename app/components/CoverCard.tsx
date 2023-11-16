@@ -10,10 +10,10 @@ const CoverCard = ({ trackName, subtitle, coverImg, onClick, selectedSong }: any
   };
   const isSelected = selectedSong?.trackName === trackName;
   return (
-    <div className={`w-52 backdrop-blur-lg  rounded-lg `}
+    <div className={`w-56 backdrop-blur-lg  rounded-lg `}
       onClick={handleClick}>
       <div className="relative shadow-md hover:shadow-lg hover:shadow-black shadow-black
-       h-48 overflow-hidden rounded-md cursor-pointer hover:scale-105 transition
+       h-52 overflow-hidden rounded-md cursor-pointer hover:scale-105 transition
       duration-300 ease-in-out">
         <Image
           src={coverImg}

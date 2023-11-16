@@ -14,11 +14,11 @@ const Home = () => {
   };
   return (
     <div className="main flex w-full lg:flex-row flex-col">
-      <div className=" flex p-1 lg:px-6 lg:pt-3 pb-24 flex-col">
+      <div className="flex p-1 lg:px-6 lg:pt-3 pb-24 flex-col w-full lg:w-3/4">
         <div className="" >
           <Topbar />
           <div>
-            <div className="py-3">
+            <div className="p-3">
               <div className="flex items-end justify-between pb-4">
                 <h2 className="text-3xl font-bold">
                   Hello, Ansh
@@ -32,14 +32,14 @@ const Home = () => {
                 <Card selectedSong = {selectedSong} onClick={handleCardClick} trackName="Riptide" coverImg="https://lastfm.freetls.fastly.net/i/u/ar0/8e9b587a6f577478e9e6480235811f7d.jpg" subtitle="Vance Joy" />
               </div>
             </div>
-            <div className="py-3">
+            <div className="p-3">
               <div className="flex items-end justify-between pb-4">
                 <h2 className="text-3xl font-bold">
                   New releases for you
                 </h2>
                 <span className=" icon">See all</span>
               </div>
-              <div className="flex gap-8">
+              <div className="flex gap-8  flex-wrap">
                 <Card selectedSong = {selectedSong} onClick={handleCardClick} trackName="Starboy" coverImg="https://upload.wikimedia.org/wikipedia/en/3/39/The_Weeknd_-_Starboy.png" subtitle="The Weekend, Daft Punk" />
                 <Card selectedSong = {selectedSong} onClick={handleCardClick} trackName="Walkerworld" coverImg="https://i.scdn.co/image/ab67616d0000b273df9a35baaa98675256b35177" subtitle="Alan Walker" />
                 <Card selectedSong = {selectedSong} onClick={handleCardClick} trackName="Freaks" coverImg="https://upload.wikimedia.org/wikipedia/en/a/a1/Freaks_Surf_Curse.jpg" subtitle="Surf Curse" />

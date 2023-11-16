@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-
 import HomeIcon from '@mui/icons-material/Home';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import KeyboardDoubleArrowRightIcon from '@mui/icons-material/KeyboardDoubleArrowRight';
@@ -16,22 +15,22 @@ const Navbar = () => {
 
   return (
     <aside className="min-h-screen navbar hidden md:flex">
-      <nav className=" flex flex-col shadow-sm ">
+      <nav className={`flex flex-col shadow-sm transition-all ${expanded ? 'w-64' : 'w-20'}`}>
         <div className="px-4 py-6 flex justify-between items-center">
           <img
             src="https://img.logoipsum.com/245.svg"
-            className={`overflow-hidden transition-all mx-1 ${expanded ? "w-16" : " hidden"}`}
+            className={`overflow-hidden transition-all mx-1 w-16 ${expanded ? "opacity-100" : "opacity-0 hidden"}`}
             alt=""
           />
           <button
             onClick={() => setExpanded((curr) => !curr)}
             className="hover:bg-black hover:text-white mx-3"
           >
-            {expanded ? <KeyboardDoubleArrowLeftIcon />: <KeyboardDoubleArrowRightIcon />}
+            {expanded ? <KeyboardDoubleArrowLeftIcon /> : <KeyboardDoubleArrowRightIcon />}
           </button>
         </div>
 
-        <div className="flex-1 px-6 pt-5 flex flex-col">
+      <div className="flex-1 px-6 pt-5 flex flex-col">
           {expanded && <span className="text-sm py-1">Features</span>}
           <NavbarItem icon={<HomeIcon />} text="Home" expanded={expanded} />
           <NavbarItem icon={<ExploreOutlinedIcon />} text="Discover" expanded={expanded} />
@@ -47,4 +46,7 @@ const Navbar = () => {
   );
 }
 
-export default Navbar
+export default Navbar;
+
+
+

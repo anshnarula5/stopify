@@ -4,7 +4,7 @@ import MusicNoteOutlinedIcon from '@mui/icons-material/MusicNoteOutlined';
 
 const TrackCard = ({ trackName, subtitle, coverImg, onClick, artist, selectedSong }: any) => {
   const handleClick = () => {
-    onClick({ trackName, subtitle, coverImg });
+    onClick({ trackName, subtitle : artist, coverImg });
   };
 
   const isSelected = selectedSong?.trackName === trackName;

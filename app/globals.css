@@ -25,6 +25,7 @@
 
 .audioPlayer{
   background-color: #0a0a0b;
+  z-index: 50;
 }
 .icon {
   opacity: 0.6; 
