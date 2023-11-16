@@ -6,6 +6,7 @@ import SongPlayer from "./components/SongPlayer";
 import TrackCard from "./components/TrackCard";
 import Image from "next/image";
 import Profile from "./components/Profile";
+import Poster from "./components/Poster";
 
 const Home = () => {
   const [selectedSong, setSelectedSong] = useState(null);
@@ -14,10 +15,11 @@ const Home = () => {
   };
   return (
     <div className="main flex w-full lg:flex-row flex-col">
-      <div className="flex p-1 lg:px-6 lg:pt-3 lg:pb-24 flex-col w-full xl:w-3/4 lg:w-2/3 ">
+      <div className="flex p-1 lg:px-14 lg:pt-3 lg:pb-24 flex-col w-full xl:w-3/4 lg:w-2/3 ">
         <div className="" >
           <Topbar />
-          <div>
+          <Poster />
+          <div className="">
             <div className="p-3">
               <div className="flex items-end justify-between pb-4">
                 <h2 className="text-3xl font-bold">

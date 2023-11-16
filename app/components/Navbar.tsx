@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-    <aside className="min-h-screen navbar hidden md:flex">
+    <aside className="min-h-screen navbar hidden lg:flex">
       <nav className={`flex flex-col shadow-sm transition-all ${expanded ? 'w-64' : 'w-20'}`}>
         <div className="px-4 py-6 flex justify-between items-center">
           <img
@@ -45,7 +45,7 @@ const Navbar = () => {
         </div>
       </nav>
     </aside>
-      <nav className="fixed bottom-0 left-0 right-0 flex md:hidden navbar z-50 p-3 justify-between items-center">
+      <nav className="fixed bottom-0 left-0 right-0 flex lg:hidden navbar z-50 p-3 justify-between items-center">
         <HomeIcon className="text-white" fontSize="large" />
         <SearchIcon className="text-white" fontSize="large" />
         <ExploreOutlinedIcon className="text-white" fontSize="large" />

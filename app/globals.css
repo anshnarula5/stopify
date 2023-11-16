@@ -7,6 +7,7 @@
   --background-secondary: #18191b;
   --text-secondary: #9b9da4;
   --active-color: #0066f5;
+  --poster-bg : #ff47c5;
 }
 
 .navbar{
@@ -42,4 +43,8 @@
 
 .active{
   color: var(--active-color);
+}
+
+.poster{
+  background-color: var(--poster-bg);
 }

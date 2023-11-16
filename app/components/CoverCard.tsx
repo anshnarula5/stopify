@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
 import MusicNoteOutlinedIcon from '@mui/icons-material/MusicNoteOutlined';
+
 const CoverCard = ({ trackName, subtitle, coverImg, onClick, selectedSong }: any) => {
   const handleClick = () => {
     if (onClick) {
@@ -10,7 +11,7 @@ const CoverCard = ({ trackName, subtitle, coverImg, onClick, selectedSong }: any
   };
   const isSelected = selectedSong?.trackName === trackName;
   return (
-    <div className={`lg:w-56 md:w-48 w-40 backdrop-blur-lg  rounded-lg `}
+    <div className={`lg:w-52 md:w-48 w-40 backdrop-blur-lg  rounded-lg `}
       onClick={handleClick}>
       <div className="relative shadow-md hover:shadow-lg hover:shadow-black shadow-black
        lg:h-52 md:h-48 h-40 overflow-hidden rounded-md cursor-pointer sm:hover:scale-105 transition
