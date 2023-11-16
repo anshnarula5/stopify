@@ -72,7 +72,8 @@ const SongPlayer = ({ song }: any) => {
             type="range"
             min="0"
             max="100"
-            value={sliderValue}
+            value={50}
+            onChange={() => {}}
             className="h-1  bg-gray-300 rounded-full mx-2"
           />
           <MicNoneOutlinedIcon className='icon' />
