@@ -61,14 +61,14 @@ const SongPlayer = ({ song }: any) => {
             className="h-1 xl:w-[50rem] lg:w-[40rem] w-full bg-gray-300 rounded-full slider mt-3 "
           />
         </div>
-        <div className='md:w-1/5 flex items-center justify-center mt-4 md:mt-0'>
+        <div className='md:w-1/5 flex items-center gap-2 mt-4 md:mt-0'>
           <VolumeUpOutlinedIcon className='icon' />
           <input
             type="range"
             min="0"
             max="100"
             value={sliderValue}
-            className="h-1 w-24 md:w-36 bg-gray-300 rounded-full mx-2"
+            className="h-1  bg-gray-300 rounded-full mx-2"
           />
           <MicNoneOutlinedIcon className='icon' />
           <DevicesOutlinedIcon className='icon' />

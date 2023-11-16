@@ -14,7 +14,7 @@ const Home = () => {
   };
   return (
     <div className="main flex w-full lg:flex-row flex-col">
-      <div className="flex p-1 lg:px-6 lg:pt-3 pb-24 flex-col w-full lg:w-3/4">
+      <div className="flex p-1 lg:px-6 lg:pt-3 lg:pb-24 flex-col w-full xl:w-3/4 lg:w-2/3 ">
         <div className="" >
           <Topbar />
           <div>

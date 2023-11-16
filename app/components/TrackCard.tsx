@@ -11,7 +11,7 @@ const TrackCard = ({ trackName, subtitle, coverImg, onClick, artist, selectedSon
 
   return (
     <div className="w-full flex justify-between cursor-pointer items-center hover:shadow-lg
-     hover:shadow-black shadow-black hover:scale-105  transition duration-200 ease-in-out py-1" onClick={handleClick}>
+     hover:shadow-black shadow-black sm:hover:scale-105  transition duration-200 ease-in-out py-1" onClick={handleClick}>
       <div className="flex gap-3 items-center">
         <div className="relative w-12 h-12 ">
           <Image src={coverImg} alt="Album Cover" objectFit="cover" layout="fill" />

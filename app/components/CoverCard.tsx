@@ -10,10 +10,10 @@ const CoverCard = ({ trackName, subtitle, coverImg, onClick, selectedSong }: any
   };
   const isSelected = selectedSong?.trackName === trackName;
   return (
-    <div className={`w-56 backdrop-blur-lg  rounded-lg `}
+    <div className={`lg:w-56 md:w-48 w-40 backdrop-blur-lg  rounded-lg `}
       onClick={handleClick}>
       <div className="relative shadow-md hover:shadow-lg hover:shadow-black shadow-black
-       h-52 overflow-hidden rounded-md cursor-pointer hover:scale-105 transition
+       lg:h-52 md:h-48 h-40 overflow-hidden rounded-md cursor-pointer sm:hover:scale-105 transition
       duration-300 ease-in-out">
         <Image
           src={coverImg}
@@ -21,7 +21,7 @@ const CoverCard = ({ trackName, subtitle, coverImg, onClick, selectedSong }: any
           layout="fill"
           objectFit="cover"
         />
-         {isSelected && (
+        {isSelected && (
           <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-md">
             <MusicNoteOutlinedIcon className="text-white text-4xl animate-spin" />
           </div>

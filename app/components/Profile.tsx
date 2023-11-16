@@ -5,10 +5,10 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 import TrackCard from './TrackCard';
 const Profile = ({handleCardClick, selectedSong} : any) => {
   return (
-    <div className=" py-6 px-8 profile  w-full lg:w-1/4">
-      <div className="flex items-center justify-between py-2">
+    <div className="py-6 px-8 profile  w-full xl:w-1/4 lg:w-1/3">
+      <div className="hidden lg:flex items-center justify-between py-2">
         <div className="flex items-center justify-between gap-4">
-          <div className="relative w-14 h-14">
+          <div className="relative w-14 h-14 ">
             <Image
               src={"https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"}
               alt="Album Cover"
