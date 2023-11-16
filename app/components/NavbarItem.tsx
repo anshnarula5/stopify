@@ -17,7 +17,7 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ icon, text, expanded }) => {
       `}
     >
       {icon}
-      <span className={`overflow-hidden transition-all ${expanded ? "md:w-36 ml-3" : "w-0"}`}>
+      <span className={`overflow-hidden transition-all ${expanded ? "md:w-44 ml-3" : "w-0"}`}>
         {text}
       </span>
       {!expanded && (

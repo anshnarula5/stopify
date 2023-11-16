@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Card = ({ trackName, subtitle, coverImg, onClick }: any) => {
+const CoverCard = ({ trackName, subtitle, coverImg, onClick }: any) => {
   const handleClick = () => {
     if (onClick) {
       onClick({ trackName, subtitle, coverImg });
@@ -25,4 +25,4 @@ const Card = ({ trackName, subtitle, coverImg, onClick }: any) => {
   );
 };
 
-export default Card;
+export default CoverCard;

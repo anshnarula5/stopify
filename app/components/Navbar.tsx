@@ -15,7 +15,7 @@ const Navbar = () => {
   const [expanded, setExpanded] = useState(true);
 
   return (
-    <aside className="h-screen navbar">
+    <aside className="min-h-screen navbar">
       <nav className=" flex flex-col shadow-sm ">
         <div className="px-4 py-6 flex justify-between items-center">
           <img
