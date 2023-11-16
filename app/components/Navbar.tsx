@@ -15,16 +15,17 @@ const Navbar = () => {
   const [expanded, setExpanded] = useState(true);
 
   return (
-    <aside className="min-h-screen navbar">
+    <aside className="min-h-screen navbar hidden md:flex">
       <nav className=" flex flex-col shadow-sm ">
         <div className="px-4 py-6 flex justify-between items-center">
           <img
             src="https://img.logoipsum.com/245.svg"
-            className={`overflow-hidden transition-all mx-1 ${expanded ? "w-16" : "w-0"}`}
+            className={`overflow-hidden transition-all mx-1 ${expanded ? "w-16" : " hidden"}`}
             alt=""
           />
           <button
             onClick={() => setExpanded((curr) => !curr)}
+            className="hover:bg-black hover:text-white mx-3"
           >
             {expanded ? <KeyboardDoubleArrowLeftIcon />: <KeyboardDoubleArrowRightIcon />}
           </button>

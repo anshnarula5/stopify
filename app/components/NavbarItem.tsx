@@ -10,14 +10,14 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ icon, text, expanded }) => {
   return (
     <div
       className={`
-        relative flex items-center py-2 my-1
+        relative flex items-center p-2 my-1
         font-medium rounded-md cursor-pointer
-        transition-colors group
+        transition-all group hover:bg-black hover:text-white
         ${expanded ? "md:w-auto" : "w-full"}
       `}
     >
       {icon}
-      <span className={`overflow-hidden transition-all ${expanded ? "md:w-44 ml-3" : "w-0"}`}>
+      <span className={`overflow-hidden  ${expanded ? "md:w-44 ml-3" : "w-0"}`}>
         {text}
       </span>
       {!expanded && (
