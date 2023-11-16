@@ -5,7 +5,7 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 import TrackCard from './TrackCard';
 const Profile = ({handleCardClick, selectedSong} : any) => {
   return (
-    <div className="py-6 px-8 profile  w-full xl:w-1/4 lg:w-1/3">
+    <div className="py-6 px-8 profile  w-full xl:w-1/4 lg:w-1/3 mb-32 md:mb-0">
       <div className="hidden lg:flex items-center justify-between py-2">
         <div className="flex items-center justify-between gap-4">
           <div className="relative w-14 h-14 ">

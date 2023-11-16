@@ -9,11 +9,13 @@ import CloudDownloadOutlinedIcon from '@mui/icons-material/CloudDownloadOutlined
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import FolderOutlinedIcon from '@mui/icons-material/FolderOutlined';
 import NavbarItem from "./NavbarItem";
-
+import SearchIcon from '@mui/icons-material/Search';
+import Image from "next/image";
 const Navbar = () => {
   const [expanded, setExpanded] = useState(true);
 
   return (
+    <>
     <aside className="min-h-screen navbar hidden md:flex">
       <nav className={`flex flex-col shadow-sm transition-all ${expanded ? 'w-64' : 'w-20'}`}>
         <div className="px-4 py-6 flex justify-between items-center">
@@ -43,6 +45,22 @@ const Navbar = () => {
         </div>
       </nav>
     </aside>
+      <nav className="fixed bottom-0 left-0 right-0 flex md:hidden navbar z-50 p-3 justify-between items-center">
+        <HomeIcon className="text-white" fontSize="large" />
+        <SearchIcon className="text-white" fontSize="large" />
+        <ExploreOutlinedIcon className="text-white" fontSize="large" />
+        <div className="relative w-10 h-10 ">
+            <Image
+              src={"https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"}
+              alt="Album Cover"
+              objectFit="cover"
+              className="rounded-full"
+              layout="fill"
+            />
+          </div>
+
+      </nav>
+    </>
   );
 }
 

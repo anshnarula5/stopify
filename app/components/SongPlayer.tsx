@@ -76,7 +76,8 @@ const SongPlayer = ({ song }: any) => {
         </div>
       </div>
       {/* Mobile view */}
-      <div className='fixed bottom-0 left-0 right-0 px-3 pt-1  flex flex-col justify-between items-center lg:hidden mx-2 rounded-xl bg-black bg-opacity-80 z-50'>
+      <div className='fixed left-0 right-0 px-3 pt-1  flex flex-col justify-between items-center lg:hidden mx-2 
+       rounded-xl bg-black bg-opacity-80 z-50' style={{bottom : "4.1rem"}}>
         <div className='flex justify-between items-center w-full '>
           <div className="flex items-center gap-1">
             <div className="relative w-12 h-12 ">
