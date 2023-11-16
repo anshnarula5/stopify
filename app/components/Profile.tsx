@@ -3,7 +3,7 @@ import React from 'react'
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import TrackCard from './TrackCard';
-const Profile = ({handleCardClick} : any) => {
+const Profile = ({handleCardClick, selectedSong} : any) => {
   return (
     <div className="w-full py-6 px-8 profile ">
       <div className="flex items-center justify-between py-2">
@@ -35,10 +35,10 @@ const Profile = ({handleCardClick} : any) => {
         </div>
       </div>
       <div className='flex flex-col gap-4'>
-      <TrackCard onClick={handleCardClick} trackName="Blinding Lights" coverImg="https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png" artist="The Weekend" subtitle = "4 min ago" />
-      <TrackCard onClick={handleCardClick} trackName="Believer" coverImg="https://upload.wikimedia.org/wikipedia/en/5/5c/Imagine-Dragons-Believer-art.jpg"  artist="Imagine Dragons" subtitle="10 mins ago" />
-      <TrackCard onClick={handleCardClick} trackName="Heat Waves" coverImg="https://upload.wikimedia.org/wikipedia/en/b/b0/Glass_Animals_-_Heat_Waves.png" artist = "Glass Animals" subtitle="1 hour ago" />
-      <TrackCard onClick={handleCardClick} trackName="Perfect" coverImg="https://i1.sndcdn.com/artworks-000220516310-6i3ate-t500x500.jpg" artist = "ed Sheeran" subtitle="2 hour ago" />
+      <TrackCard selectedSong = {selectedSong} onClick={handleCardClick} trackName="Blinding Lights" coverImg="https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png" artist="The Weekend" subtitle = "4 min ago" />
+      <TrackCard selectedSong = {selectedSong} onClick={handleCardClick} trackName="Believer" coverImg="https://upload.wikimedia.org/wikipedia/en/5/5c/Imagine-Dragons-Believer-art.jpg"  artist="Imagine Dragons" subtitle="10 mins ago" />
+      <TrackCard selectedSong = {selectedSong} onClick={handleCardClick} trackName="Heat Waves" coverImg="https://upload.wikimedia.org/wikipedia/en/b/b0/Glass_Animals_-_Heat_Waves.png" artist = "Glass Animals" subtitle="1 hour ago" />
+      <TrackCard selectedSong = {selectedSong} onClick={handleCardClick} trackName="Perfect" coverImg="https://i1.sndcdn.com/artworks-000220516310-6i3ate-t500x500.jpg" artist = "ed Sheeran" subtitle="2 hour ago" />
       </div>
       <div className='py-6'>
         <div className="flex items-end justify-between ">
@@ -49,8 +49,8 @@ const Profile = ({handleCardClick} : any) => {
         </div>
       </div>
       <div className='flex flex-col gap-4'>
-      <TrackCard onClick={handleCardClick} trackName="Land of rising sun" coverImg="https://lastfm.freetls.fastly.net/i/u/ar0/7def09fa362a4410703fa8d58a093af2.jpg" artist = "12 songs" subtitle="1hr 2min" />
-      <TrackCard onClick={handleCardClick} trackName="burning memories" coverImg="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Saint_Jhn_-_Roses_%28Imanbek_Remix%29.png/220px-Saint_Jhn_-_Roses_%28Imanbek_Remix%29.png" artist = "27 songs" subtitle="2hr 32min" />
+      <TrackCard selectedSong = {selectedSong} onClick={handleCardClick} trackName="Land of rising sun" coverImg="https://lastfm.freetls.fastly.net/i/u/ar0/7def09fa362a4410703fa8d58a093af2.jpg" artist = "12 songs" subtitle="1hr 2min" />
+      <TrackCard selectedSong = {selectedSong} onClick={handleCardClick} trackName="burning memories" coverImg="https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Saint_Jhn_-_Roses_%28Imanbek_Remix%29.png/220px-Saint_Jhn_-_Roses_%28Imanbek_Remix%29.png" artist = "27 songs" subtitle="2hr 32min" />
 
 </div>
     </div>

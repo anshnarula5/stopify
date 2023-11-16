@@ -6,6 +6,7 @@
   --background-primary: #101011;
   --background-secondary: #18191b;
   --text-secondary: #9b9da4;
+  --active-color: #0066f5;
 }
 
 .navbar{
@@ -36,4 +37,8 @@
 
 .profile{
   background-color: var(--background-primary);
+}
+
+.active{
+  color: var(--active-color);
 }

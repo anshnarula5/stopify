@@ -1,14 +1,17 @@
 import Image from 'next/image';
 import React from 'react';
-
-const CoverCard = ({ trackName, subtitle, coverImg, onClick }: any) => {
+import PauseCircleOutlineIcon from '@mui/icons-material/PauseCircleOutline';
+import MusicNoteOutlinedIcon from '@mui/icons-material/MusicNoteOutlined';
+const CoverCard = ({ trackName, subtitle, coverImg, onClick, selectedSong }: any) => {
   const handleClick = () => {
     if (onClick) {
       onClick({ trackName, subtitle, coverImg });
     }
   };
+  const isSelected = selectedSong?.trackName === trackName;
   return (
-    <div className="w-52" onClick={handleClick}>
+    <div className={`w-52 backdrop-blur-lg  rounded-lg `}
+      onClick={handleClick}>
       <div className="relative h-48 overflow-hidden rounded-md cursor-pointer">
         <Image
           src={coverImg}
@@ -16,8 +19,13 @@ const CoverCard = ({ trackName, subtitle, coverImg, onClick }: any) => {
           layout="fill"
           objectFit="cover"
         />
+         {isSelected && (
+          <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40 rounded-md">
+            <MusicNoteOutlinedIcon className="text-white text-4xl animate-spin" />
+          </div>
+        )}
       </div>
-      <div className="py-4 rounded-b-lg">
+      <div className={`py-4 rounded-b-lg ${isSelected && 'active'}`}>
         <h2 className="text-lg font-semibold">{trackName}</h2>
         <p className="secondaryText">{subtitle}</p>
       </div>
