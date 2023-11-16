@@ -21,3 +21,15 @@
 .secondaryText{
   color: var(--text-secondary);
 }
+
+.audioPlayer{
+  background-color: #0a0a0b;
+}
+.icon {
+  opacity: 0.6; 
+  transition: opacity 0.3s ease; 
+  &:hover {
+    opacity: 1; 
+    cursor: pointer;
+  }
+}

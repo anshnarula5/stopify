@@ -1,10 +1,15 @@
 import Image from 'next/image';
 import React from 'react';
 
-const Card = ({ trackName, subtitle, coverImg }: any) => {
+const Card = ({ trackName, subtitle, coverImg, onClick }: any) => {
+  const handleClick = () => {
+    if (onClick) {
+      onClick({ trackName, subtitle, coverImg });
+    }
+  };
   return (
-    <div className="w-48 ">
-      <div className="relative h-48 overflow-hidden rounded-md">
+    <div className="w-48" onClick={handleClick}>
+      <div className="relative h-48 overflow-hidden rounded-md cursor-pointer">
         <Image
           src={coverImg}
           alt="Album Cover"
