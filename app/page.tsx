@@ -14,7 +14,7 @@ const Home = () => {
     setSelectedSong(song);
   };
   return (
-    <div className="main flex w-full lg:flex-row flex-col">
+    <div className="main flex w-full lg:flex-row flex-col overflow-x-hidden">
       <div className="flex p-1 lg:px-14 lg:pt-3 lg:pb-24 flex-col w-full xl:w-3/4 lg:w-2/3 ">
         <div className="" >
           <Topbar />
