@@ -13,11 +13,11 @@ const NavbarItem: React.FC<NavbarItemProps> = ({ icon, text, expanded }) => {
         relative flex items-center p-2 my-1
         font-medium rounded-md cursor-pointer
         transition-all group hover:bg-black hover:text-white
-        ${expanded ? "md:w-auto" : "w-full"}
+        ${expanded ? "xl:w-44 lg:w-36 md:w-28" : "w-full"}
       `}
     >
       {icon}
-      <span className={`overflow-hidden  ${expanded ? "md:w-44 ml-3" : "w-0"}`}>
+      <span className={`overflow-hidden  ${expanded ? "xl:w-44 lg:w-36 md:w-28 ml-3" : "w-0"}`}>
         {text}
       </span>
       {!expanded && (
